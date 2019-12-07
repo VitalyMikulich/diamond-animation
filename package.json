@@ -1,0 +1,22 @@
+{
+  "name": "diamond-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "diamond.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitalyMikulich/diamond-animation.git"
+  },
+  "author": "Vitaly Mikulich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitalyMikulich/diamond-animation/issues"
+  },
+  "homepage": "https://github.com/VitalyMikulich/diamond-animation#readme",
+  "dependencies": {
+    "phaser": "^2.6.2"
+  }
+}

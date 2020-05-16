@@ -1,4 +1,10 @@
-const preload = () => {
+const diamond = new Phaser.Game(1500, 700, Phaser.AUTO, 'diamond', {
+    preload: preload,
+    create: create,
+    update: update
+});
+
+function preload() {
     diamond.load.spritesheet('start','assets/img/bri_big_anim_start.png', 392, 372, 4);
     diamond.load.spritesheet('middle','assets/img/bri_big_anim_middle.png', 449, 432, 4);
     diamond.load.spritesheet('finish','assets/img/bri_big_anim_finish.png', 326, 337, 4);
@@ -15,7 +21,7 @@ let coord = {
     y: 200
 };
 
-const create = () => {
+function create() {
     start = diamond.add.sprite(coord.x, coord.y, 'start', 4);
     start.animations.add('walk');
     start.animations.play('walk', 10, true);
@@ -73,10 +79,4 @@ function update() {
         middle.scale.y = 0.1;
     }
 
-}
-
-const diamond = new Phaser.Game(1500, 700, Phaser.AUTO, 'diamond', {
-    preload: preload,
-    create: create,
-    update: update
-});
+};
